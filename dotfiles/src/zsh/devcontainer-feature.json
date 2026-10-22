@@ -1,0 +1,9 @@
+{
+  "id": "nvim",
+  "version": "0.1.0",
+  "name": "Neovim",
+  "containerEnv": {
+    "TERM": "xterm-256color",
+    "COLORTERM": "truecolor"
+  }
+}

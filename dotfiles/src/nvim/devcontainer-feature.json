@@ -1,0 +1,9 @@
+{
+  "id": "nvim",
+  "version": "0.1.0",
+  "name": "Neovim",
+  "options": {
+    "python": { "type": "boolean", "default": "false" },
+    "web": { "type": "boolean", "default": "false" }
+  }
+}

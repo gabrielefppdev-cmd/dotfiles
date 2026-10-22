@@ -1,0 +1,13 @@
+{
+  "name": "Dotfiles dev container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "dev",
+  "runArgs": ["--name", "dotfiles"],
+  "postCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
+  "features": {
+    "./dotfiles/src/nvim": {},
+    "./dotfiles/src/zsh": {}
+  }
+}
