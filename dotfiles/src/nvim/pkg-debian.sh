@@ -2,7 +2,7 @@
 set -eu
 
 apt update
-apt install make gcc ripgrep fd-find tree-sitter-cli unzip git xclip wl-clipboard nodejs npm curl
+apt install -y make gcc ripgrep fd-find tree-sitter-cli unzip git xclip wl-clipboard nodejs npm curl
 
 # Now we install nvim
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
