@@ -20,6 +20,7 @@ if [ "$PYTHON" = "true" ]; then
   TOOLS="$TOOLS pyright ruff"
   case "$ID" in
     ubuntu) apt-get install -y python3 python3-venv python3-pip ;;
+    debian) apt-get install -y python3 python3-venv python3-pip ;;
     arch)   pacman -S --noconfirm --needed python python-pip ;;
     alpine) apk add --no-cache python3 py3-pip ;;
   esac

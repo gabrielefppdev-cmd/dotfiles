@@ -5,10 +5,11 @@ set -eu
 
 case "$ID" in
   ubuntu) sh ./pkg-ubuntu.sh ;;
+  debian) sh ./pkg-debian.sh ;;
   arch)   sh ./pkg-arch.sh ;;
   alpine) sh ./pkg-alpine.sh ;;
   *)
-    echo "Distro not supported: $ID - supported distro: arch, alpine, ubuntu"
+    echo "Distro not supported: $ID - supported distro: arch, alpine, debian, ubuntu"
     exit 1
     ;;
 esac
